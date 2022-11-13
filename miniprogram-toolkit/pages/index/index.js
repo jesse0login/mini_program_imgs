@@ -1,0 +1,19 @@
+// index.js
+Page({
+  data: {
+    imgUrls: [
+      '../../images/swiper/b1.jpg',
+      '../../images/swiper/b2.jpg',
+      '../../images/swiper/b3.jpg'
+    ],
+    category: [
+      '去水印工具',
+      '娱乐工具',
+      '其他工具'
+    ],
+    indicatorDots: false,
+    autoplay: false,
+    interval: 3000,
+    duration: 800
+  }
+})

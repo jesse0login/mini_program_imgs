@@ -1,0 +1,52 @@
+<view class="main">
+    <view class="header">
+        <image src="../../images/user/user.png" class="thumb"></image>
+        <text class="nickname">彩虹薄荷</text>
+        <text class="about">薄荷味，春天的味道</text>
+    </view>
+    <view class="address-box">
+      <block >
+        <navigator class="list-item" >
+          <view class='item'>
+            <button open-type='share' class="">分享好友</button>
+          </view>
+          <view class="div-line"></view>
+        </navigator>
+        <navigator class="list-item" >
+          <view class='item'>
+            <button open-type='contact'>联系客服</button>
+          </view>
+          <view class="div-line"></view>
+        </navigator>
+        <navigator class="list-item" >
+          <view class='item'>
+            <button bindtap="clearStorage">清除缓存</button>
+          </view>
+          <view class="div-line"></view>
+        </navigator>
+      </block>
+    </view>
+    <!-- 分享 -->
+    <!--/pages/detail/detail.wxml--> 
+    <!-- <view class='share'>
+      <image src='../../images/user/share2.png'></image>
+      <text>分享</text>
+      <button open-type='share'></button>
+    </view> -->
+    <!-- <view class="orders-box">
+        <view class="orders">我收藏的工具</view>
+        <view class="orders-list" wx:for="{{orders}}" wx:key="index">
+            <view class="orders-number">订单编号：{{item.number}}</view>
+            <view class="orders-detail">
+                <image src="{{item.thumb}}"></image>
+                <view class="">{{item.name}}</view>
+                <view class="">{{item.count}}</view>
+                <text class="orders-status">{{item.status}}</text>
+            </view>
+            <view class="orders-footer">
+                <text>实付：￥{{item.money}}</text>
+                <button size="mini" class="orders-btn" bindtap="payOrders">打开</button>
+            </view>
+        </view>
+    </view> -->
+</view>

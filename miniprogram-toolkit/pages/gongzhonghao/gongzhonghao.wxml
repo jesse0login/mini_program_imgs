@@ -1,0 +1,12 @@
+<!--pages/gongzhonghao/gongzhonghao.wxml-->
+<view class="container">
+  <view>
+    <text>薄荷味公众号</text>
+  </view>
+  <view>
+    <image src="../../images/gzh_qrcode.jpg"></image>
+  </view>
+  <view>
+    <text>长按上图，关注公众号</text>
+  </view>
+</view>
