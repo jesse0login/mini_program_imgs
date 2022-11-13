@@ -6,7 +6,7 @@
   <view class="header">
     <input type="text" placeholder="请输入..." value="{{input}}" bindinput="inputChangeHandle" bindconfirm="addTodoHandle">
     </input>
-    <image src="https://jesse0login.github.io/mini_program_imgs/images/office/plus.png" bindtap="addTodoHandle"></image>
+    <image src="../../images/office/plus.png" bindtap="addTodoHandle"></image>
   </view>
 
   <block wx:if="{{todos.length}}">

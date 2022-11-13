@@ -11,8 +11,8 @@ Page({
     canIUseGetUserProfile: false,
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName'), 
     menuitems: [
-      { text: '联系客服', url: '', icon: 'https://jesse0login.github.io/mini_program_imgs/images/user/service.png', tips: '' },
-      { text: '清除缓存', url: '', icon: 'https://jesse0login.github.io/mini_program_imgs/images/user/delete.png', tips: '' }
+      { text: '联系客服', url: '', icon: '../../images/user/service.png', tips: '' },
+      { text: '清除缓存', url: '', icon: '../../images/user/delete.png', tips: '' }
     ]  
   },
   /**
@@ -135,7 +135,7 @@ Page({
     return {
       title: '薄荷味',
       path: 'pages/index/index?id=${id}', // 分享后打开的页面
-      imageUrl: 'https://jesse0login.github.io/mini_program_imgs/images/gzh_qrcode.jpg'
+      imageUrl: '../../images/gzh_qrcode.jpg'
     }
   },
   

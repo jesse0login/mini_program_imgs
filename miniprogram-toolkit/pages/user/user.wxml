@@ -1,6 +1,6 @@
 <view class="main">
     <view class="header">
-        <image src="https://jesse0login.github.io/mini_program_imgs/images/user/user.png" class="thumb"></image>
+        <image src="../../images/user/user.png" class="thumb"></image>
         <text class="nickname">彩虹薄荷</text>
         <text class="about">薄荷味，春天的味道</text>
     </view>
@@ -26,10 +26,15 @@
         </navigator>
       </block>
     </view>
+    <view class="right">
+      <view>此小程序部分代码使用网上开源代码修改而成</view>
+      <view>若有侵权请联系删除</view>
+    </view>
+    
     <!-- 分享 -->
     <!--/pages/detail/detail.wxml--> 
     <!-- <view class='share'>
-      <image src='https://jesse0login.github.io/mini_program_imgs/images/user/share2.png'></image>
+      <image src='../../images/user/share2.png'></image>
       <text>分享</text>
       <button open-type='share'></button>
     </view> -->

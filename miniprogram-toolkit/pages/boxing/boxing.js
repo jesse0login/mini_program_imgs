@@ -18,9 +18,9 @@ Page({
     gameResult: '',
     playAgain: false,
     src:[
-      'https://jesse0login.github.io/mini_program_imgs/images/entertainment/boxing/clipper.png',
-      'https://jesse0login.github.io/mini_program_imgs/images/entertainment/boxing/step.png',
-      'https://jesse0login.github.io/mini_program_imgs/images/entertainment/boxing/stone.png'
+      '../../images/entertainment/boxing/clipper.png',
+      '../../images/entertainment/boxing/step.png',
+      '../../images/entertainment/boxing/stone.png'
     ],
   },
 
@@ -28,7 +28,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({ imgUser: 'https://jesse0login.github.io/mini_program_imgs/images/entertainment/boxing/default.png'});
+    this.setData({ imgUser: '../../images/entertainment/boxing/default.png'});
     this.setData({winCount:0});
     this.setData({gameResult : '比赛结果即将揭晓'});
     this.startTimer();
@@ -57,15 +57,15 @@ Page({
     if (this.data.imgAi == this.data.imgUser){
       resultStr = '不相上下，打个平局';
     }
-    else if (this.data.imgAi == 'https://jesse0login.github.io/mini_program_imgs/images/entertainment/boxing/clipper.png' && this.data.imgUser == 'https://jesse0login.github.io/mini_program_imgs/images/entertainment/boxing/stone.png'){
+    else if (this.data.imgAi == '../../images/entertainment/boxing/clipper.png' && this.data.imgUser == '../../images/entertainment/boxing/stone.png'){
       this.setData({ winCount : this.data.winCount + 1});
       resultStr = '🐂逼呀少年，你赢了';
     }
-    else if (this.data.imgAi == 'https://jesse0login.github.io/mini_program_imgs/images/entertainment/boxing/stone.png' && this.data.imgUser == 'https://jesse0login.github.io/mini_program_imgs/images/entertainment/boxing/step.png') {
+    else if (this.data.imgAi == '../../images/entertainment/boxing/stone.png' && this.data.imgUser == '../../images/entertainment/boxing/step.png') {
       this.setData({ winCount: this.data.winCount + 1 });
       resultStr = '🐂逼呀少年，你赢了';
     }
-    else if (this.data.imgAi == 'https://jesse0login.github.io/mini_program_imgs/images/entertainment/boxing/step.png' && this.data.imgUser == 'https://jesse0login.github.io/mini_program_imgs/images/entertainment/boxing/clipper.png') {
+    else if (this.data.imgAi == '../../images/entertainment/boxing/step.png' && this.data.imgUser == '../../images/entertainment/boxing/clipper.png') {
 
       this.setData({ winCount: this.data.winCount + 1 });
       resultStr = '🐂逼呀少年，你赢了';
@@ -86,7 +86,7 @@ Page({
     }
     this.startTimer();
     resultStr = "比赛结果即将揭晓";
-    this.setData({imgUser : 'https://jesse0login.github.io/mini_program_imgs/images/entertainment/boxing/default.png'});
+    this.setData({imgUser : '../../images/entertainment/boxing/default.png'});
     this.setData({ gameResult: resultStr});
     this.setData({ playAgain: false });
   }

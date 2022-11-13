@@ -5,7 +5,7 @@
   </view>
   <view>
     <view class="qrcodeArea">
-      <image show-menu-by-longpress src="https://jesse0login.github.io/mini_program_imgs/images/gzh_qrcode.jpg">
+      <image show-menu-by-longpress src="../../images/gzh_qrcode.jpg">
       </image>
     </view>
   </view>

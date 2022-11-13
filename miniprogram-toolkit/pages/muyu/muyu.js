@@ -1,9 +1,10 @@
 // https://blog.csdn.net/baijielove1013/article/details/126800334
 Page({
     data: {
-        bgurl: "https://jesse0login.github.io/mini_program_imgs/images/entertainment/muyu/muyu.png",
+        bgurl: "../../images/entertainment/muyu/muyu.png",
         animationData: {},
-        checkFalg:false
+        star : 0,
+        checkFalg:false        
     },
     setLoading: function(a) {
         this.setData({
@@ -52,22 +53,23 @@ Page({
         fail: function (e) {
         }
       })
-      innerAudioContext.src="https://jesse0login.github.io/mini_program_imgs/images/entertainment/muyu/muyu.mp3"
+      innerAudioContext.src="/pages/muyu/muyu.mp3"
       innerAudioContext.play()
       },
       //敲击切换图片
       checkImg:function(){
           this.setData({
-            bgurl: "https://jesse0login.github.io/mini_program_imgs/images/entertainment/muyu/muyu1.png"
+            bgurl: "../../images/entertainment/muyu/muyu1.png"
           })
           this.setData({
-            checkFalg: true
+            checkFalg: true            
           })
           this.audioFn();
           wx.vibrateShort();
           setTimeout(() => {
             this.setData({
-              bgurl: "https://jesse0login.github.io/mini_program_imgs/images/entertainment/muyu/muyu.png"
+              star : this.data.star + 1,
+              bgurl: "../../images/entertainment/muyu/muyu.png"
             })
           }, 100);
          
