@@ -4,7 +4,7 @@
     <text>薄荷味公众号</text>
   </view>
   <view>
-    <image src="https://jesse0login.github.io/mini_program_imgs/miniprogram-toolkit/images/gzh_qrcode.jpg"></image>
+    <image :src="https://jesse0login.github.io/mini_program_imgs/miniprogram-toolkit/images/gzh_qrcode.jpg" mode="widthFix" :show-menu-by-longpress="true"></image>
   </view>
   <view>
     <text>长按上图，关注公众号</text>
