@@ -16,5 +16,30 @@ Page({
     autoplay: false,
     interval: 3000,
     duration: 800
-  }
+  },
+
+  onLoad: function (options) {
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ["shareAppMessage", "shareTimeline"],
+    });
+  },
+  onShareTimeline: function (res) {
+    var that = this;
+    return {
+      title: "薄荷味小程序-工具箱",
+      imageUrl: "../../images/xcx_qrcode.jpg",
+      query: "",
+      success: function (res) {},
+    };
+  },
+  onShareAppMessage: function (res) {
+    return {
+      title: "薄荷味小程序-工具箱",
+      imageUrl: "../../images/xcx_qrcode.jpg",
+      path: "/pages/index/index",
+      success: function (res) {},
+    };
+  },
+
 })

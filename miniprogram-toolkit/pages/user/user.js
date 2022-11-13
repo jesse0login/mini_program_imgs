@@ -133,7 +133,7 @@ Page({
       console.log(res.target)
     }
     return {
-      title: '薄荷味',
+      title: '薄荷味小程序-工具箱',
       path: 'pages/index/index?id=${id}', // 分享后打开的页面
       imageUrl: '../../images/gzh_qrcode.jpg'
     }
