@@ -2,9 +2,9 @@
 Page({
   data: {
     imgUrls: [
-      '../../images/swiper/b1.jpg',
-      '../../images/swiper/b2.jpg',
-      '../../images/swiper/b3.jpg'
+      'https://jesse0login.github.io/mini_program_imgs/miniprogram-toolkit/images/swiper/b1.jpg',
+      'https://jesse0login.github.io/mini_program_imgs/miniprogram-toolkit/images/swiper/b2.jpg',
+      'https://jesse0login.github.io/mini_program_imgs/miniprogram-toolkit/images/swiper/b3.jpg'
     ],
     category: [
       '去水印工具',

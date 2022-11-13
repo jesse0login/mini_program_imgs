@@ -8,34 +8,34 @@
     </block>
   </swiper>
 
-  <view class="selected">
-    <view class="select-top">
-      <navigator url="/pages/gongzhonghao/gongzhonghao" hover-class="navigator-hover">
-        <view class="select-top-small">
-          <image src="../../images/gzh_banner.png"></image>
-        </view>
-      </navigator>
-    </view>
-  </view>
 
+  <navigator url="/pages/gongzhonghao/gongzhonghao" hover-class="navigator-hover">
+    <view class="select-top-small">
+      <view class="image_qr">
+        <image src="https://jesse0login.github.io/mini_program_imgs/miniprogram-toolkit/images/gzh_qrcode.jpg"></image>
+      </view>
+      <view class="banner">薄荷味 公众号</view>
+      <view class="image_click">点击关注</view>
+    </view>
+  </navigator>
   <!--这里加一个常用工具栏-->
   <!-- <view class="newest-title"><text>常用工具</text></view>
     <view class="workbench">
         <view class="list">
           <view class="items">
-            <image src="../../images/entertainment/s4.png"></image>
+            <image src="https://jesse0login.github.io/mini_program_imgs/miniprogram-toolkit/images/entertainment/s4.png"></image>
             <text>发布车源</text>
           </view>
           <view class="items">
-            <image src="../../images/entertainment/s4.png"></image>
+            <image src="https://jesse0login.github.io/mini_program_imgs/miniprogram-toolkit/images/entertainment/s4.png"></image>
             <text>户准寻车</text>
           </view>
           <view class="items">
-            <image src="../../images/entertainment/s4.png"></image>
+            <image src="https://jesse0login.github.io/mini_program_imgs/miniprogram-toolkit/images/entertainment/s4.png"></image>
             <text>我的订单</text>
           </view>
           <view class="items">
-            <image src="../../images/entertainment/s4.png"></image>
+            <image src="https://jesse0login.github.io/mini_program_imgs/miniprogram-toolkit/images/entertainment/s4.png"></image>
             <text>通知消息</text>
           </view>
         </view>
@@ -54,7 +54,7 @@
     <view class="newest-box">
       <view class="newest-list">
         <navigator url="/pages/todo/todo">
-          <image src="../../images/office/todo.png"></image>
+          <image src="https://jesse0login.github.io/mini_program_imgs/miniprogram-toolkit/images/office/todo.png"></image>
           <view class="newest-text"><text>todo-list</text></view>
           <view class="newest-text2"><text>写下每日待办吧~~</text></view>
         </navigator>
@@ -67,22 +67,22 @@
     <view class="newest-box">
       <view class="newest-list">
         <navigator url="/pages/boxing/boxing">
-          <image src="../../images/entertainment/boxing.png"></image>
+          <image src="https://jesse0login.github.io/mini_program_imgs/miniprogram-toolkit/images/entertainment/boxing.png"></image>
           <view class="newest-text"><text>猜拳</text></view>
           <view class="newest-text2"><text>来吧猜拳吧少年~~</text></view>
         </navigator>
       </view>
       <view class="newest-list">
         <navigator url="/pages/clock/clock">
-          <image src="../../images/entertainment/time.png"></image>
+          <image src="https://jesse0login.github.io/mini_program_imgs/miniprogram-toolkit/images/entertainment/time.png"></image>
           <view class="newest-text"><text>时钟</text></view>
           <view class="newest-text2"><text>看时间一秒一秒流过~~</text></view>
         </navigator>
       </view>
-      
+
       <view class="newest-list">
         <navigator url="/pages/prize/prize">
-          <image src="../../images/entertainment/prize.png"></image>
+          <image src="https://jesse0login.github.io/mini_program_imgs/miniprogram-toolkit/images/entertainment/prize.png"></image>
           <view class="newest-text"><text>抽奖</text></view>
           <view class="newest-text2"><text>快来试试手气吧~~</text></view>
         </navigator>
