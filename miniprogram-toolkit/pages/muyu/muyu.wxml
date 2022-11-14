@@ -1,6 +1,0 @@
-<view style="color: white;font-size: 30px;">{{'功德量: '+star}}</view>
-<view >
-    <view class="ripple" style="{{rippleStyle}}"></view>
-    <image  animation="{{animationData}}" class="muyuicon" src="{{bgurl}}" />
-    <view   class="container" bindtouchstart="containerTap"></view>
-</view>
