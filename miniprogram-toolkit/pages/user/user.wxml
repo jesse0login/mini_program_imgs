@@ -8,7 +8,7 @@
       <block >
         <navigator class="list-item" >
           <view class='item'>
-            <button open-type='share' class="">分享好友</button>
+            <button open-type='share'>分享好友</button>
           </view>
           <view class="div-line"></view>
         </navigator>
@@ -26,10 +26,7 @@
         </navigator>
       </block>
     </view>
-    <view class="right">
-      <view>此小程序部分代码使用网上开源代码修改而成</view>
-      <view>若有侵权请联系删除</view>
-    </view>
+
     
     <!-- 分享 -->
     <!--/pages/detail/detail.wxml--> 

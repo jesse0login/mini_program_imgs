@@ -1,4 +1,6 @@
 // page/component/new-pages/user/user.js
+const commonFun = require('../common/common');
+
 Page({
   data:{
     thumb:'',
@@ -83,16 +85,19 @@ Page({
   
   },
   onLoad(){
-    var self = this;
-    wx.getUserInfo({
-      success: function(res){
-        console.log('getUserInfo()  success'); 
-        self.setData({
-          thumb: res.userInfo.avatarUrl,
-          nickname: res.userInfo.nickName
-        })
-      }
-    });
+    //分享功能
+    commonFun.sharePage();   
+
+    // var self = this;
+    // wx.getUserInfo({
+    //   success: function(res){
+    //     console.log('getUserInfo()  success'); 
+    //     self.setData({
+    //       thumb: res.userInfo.avatarUrl,
+    //       nickname: res.userInfo.nickName
+    //     })
+    //   }
+    // });
 
     // if (wx.getUserProfile) {
     //   this.setData({
@@ -123,22 +128,7 @@ Page({
     //   }
     // }) 
 
-  },
-
-  /**分享按钮事件 */
-  onShareAppMessage(res) {
-    let id = wx.getStorageSync('shareId') // 分享产品的Id
-    if (res.from === 'button') {
-      // 来自页面内转发按钮
-      console.log(res.target)
-    }
-    return {
-      title: '薄荷味小程序-工具箱',
-      path: 'pages/index/index?id=${id}', // 分享后打开的页面
-      imageUrl: '../../images/gzh_qrcode.jpg'
-    }
-  },
-  
+  }, 
   
   /**
    * 发起支付请求
